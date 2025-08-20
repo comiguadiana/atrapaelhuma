@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-image: url('../img/fondo.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Opcional: fija la imagen al hacer scroll */
+    background-position: center; /* Centra la imagen */
+}
+
+
+
+.game-container {
+    width: 90%;
+    max-width: 400px; /* Ancho máximo para evitar que sea demasiado grande */
+}
+.palo {
+
+    width: 10%;
+    height: 100%;
+    background-image: url(../img/palo.png);
+    position: absolute;
+    left: 0px;
+}
+.palo2 {
+
+    width: 10%;
+    height: 100%;
+    background-image: url(../img/palo.png);
+    position: absolute;
+    right: 0px;
+}
+
+/* Cabezera de la máquina */
+.machine-header {
+    width: 100%;
+    height: auto; /* Altura automática para mantener la proporción */
+    display: flex;
+    justify-content: center;
+}
+
+.machine-header-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Asegura que no se salga del contenedor */
+    object-fit: contain; /* Muestra la imagen completa sin deformar */
+}
+
+/* Zona de juego (transparente, solo para el gancho y los peluches) */
+.game-area {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Altura fija para la zona de juego */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente (opcional) */
+    background-image: url('../img/maquina_zonajuego.png'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    overflow: hidden;
+    margin-top: -5px;
+}
+
+/* Gancho */
+.hook-container {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12%;
+    transition: all 0.3s;
+}
+
+.hook {
+    width: 100%;
+    height: auto;
+}
+
+/* Peluches */
+.prize {
+    position: absolute;
+    width: 12%;
+    max-width: 50px;
+}
+
+#prize1 { left: 10%; bottom: 0%; }
+#prize2 { left: 30%; bottom: 0%; }
+#prize3 { left: 60%; bottom: 0%; }
+#prize4 { left: 80%; bottom: 0%; }
+
+.prize-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Base de la máquina */
+.machine-base {
+    width: 100%;
+    height: auto; /* Altura automática para mantener la proporción */
+    display: flex;
+    justify-content: center;
+}
+
+.machine-base-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Asegura que no se salga del contenedor */
+    object-fit: contain; /* Muestra la imagen completa sin deformar */
+}
+
+/* Controles */
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Botones */
+.control-btn {
+    padding: 15px;
+    font-size: 40px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 25%;
+}
+
+
+.control-btn2 {
+    padding: 15px;
+    font-size: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+.control-btn:active {
+    background-color: #ff5252;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.won-prize {
+    max-width: 80vw;
+    max-height: 50vh;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuadiaGames</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Cabezera de la máquina -->
+        <div class="machine-header">
+            <img src="img/maquina_cabecera.png" alt="Cabezera de la máquina" class="machine-header-img">
+        </div>
+
+        <!-- Zona de juego (transparente, solo para el gancho y los peluches) -->
+        <div class="game-area">
+           
+            <div class="hook-container" id="hook">
+                <img src="img/gancho.png" alt="Gancho" class="hook">
+            </div>
+            <!-- Peluches -->
+            <div class="prize" id="prize1">
+                <img src="img/regalo1.png" alt="Peluche 1" class="prize-img">
+            </div>
+            <div class="prize" id="prize2">
+                <img src="img/regalo2.png" alt="Peluche 2" class="prize-img">
+            </div>
+            <div class="prize" id="prize3">
+                <img src="img/regalo3.png" alt="Peluche 3" class="prize-img">
+            </div>
+            <div class="prize" id="prize4">
+                <img src="img/regalo4.png" alt="Peluche 4" class="prize-img">
+            </div>
+            <div class="palo">
+            </div>
+            <div class="palo2">
+            </div>
+        </div>
+
+        <!-- Base de la máquina -->
+        <div class="machine-base">
+            <img src="img/maquina_base.png" alt="Base de la máquina" class="machine-base-img">
+        </div>
+
+        <!-- Controles -->
+        <div class="controls">
+            <button id="leftBtn" class="control-btn">←</button>
+            <button id="rightBtn" class="control-btn">→</button>
+            <button id="downBtn" class="control-btn">↓</button>
+        </div>
+    </div>
+
+    <!-- Modal de victoria -->
+    <div class="modal" id="winModal">
+        <div class="modal-content">
+            <h2>¡Enhorabona!</h2>
+            <h3> Tens un Guadianix Virtual! </h3>
+            <h4>Si en vols un, ajuda a fer-los per l'any que ve</h4>
+            <h4>Col·labora amb la <a href='https://www.instagram.com/comiguadiana/'>@comiguadiana</a></h4>
+            <img id="wonPrize" src="" alt="Premio ganado" class="won-prize">
+            <button id="restartBtn" class="control-btn2">Torna a començar</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
