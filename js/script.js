@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hook.style.left = '50%';
         hook.style.top = '0%';
         winModal.style.display = 'none';
+        mostrarImagenesAleatorias();
     }
 
     // Event listeners para botones
