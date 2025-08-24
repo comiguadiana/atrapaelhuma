@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5L5EF473Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-J5L5EF473Z');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atrapa el humà - Guadiana</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="game-container">
         <!-- Cabezera de la máquina -->
@@ -15,7 +26,7 @@
 
         <!-- Zona de juego (transparente, solo para el gancho y los peluches) -->
         <div class="game-area">
-           
+
             <div class="hook-container" id="hook">
                 <img src="img/gancho.png" alt="Gancho" class="hook">
             </div>
@@ -65,4 +76,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
